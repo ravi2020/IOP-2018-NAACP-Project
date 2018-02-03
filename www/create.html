@@ -5,14 +5,25 @@
         <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
         <link rel="stylesheet" type="text/css" href="main.css">
         <title>Create an Account</title>
+
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
     </head>
 
     <body>
-        <h1>Click the button below to create an account:</h1>
-        <button onclick="document.getElementById('id01').style.display='block'" class="flex-container" style="width:auto;">Create An Account!</button>
+        <!-- <h1>Click the button below to create an account:</h1>
+        <button onclick="document.getElementById('id01').style.display='block'" class="flex-container" style="width:auto;">Create An Account!</button> -->
 
-        <div id="id01" class="modal">
-            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <!-- <div id="id01" class="modal">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span> -->
 
             <form class="modal-content" action="#.php">
                 <div class="container">
@@ -44,18 +55,26 @@
                     </p>
 
                     <div class="clearfix">
-                        <button type="button" 
-                        onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">
-                            Cancel
-                        </button>
-                        <button type="submit" class="signupbtn">
+                        <a href="SignIn.html">
+                            <button type="button" class="cancelbtn">
+                                Cancel
+                            </button>
+                        </a>
+                        <button type="submit" onclick="redirect()" class="signupbtn">
                             Create Account
                         </button>
                     </div>
                 </div>
             </form>
-        </div>
+        <!-- </div> -->
 
+        <script>
+            function redirect() {
+                if (true) {
+                    location.href="survey.html";
+                }
+            }
+        </script>
         <script>
             // Get modal
             var modal = document.getElementById('id01');
