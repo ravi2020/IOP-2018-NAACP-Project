@@ -13,44 +13,89 @@
 
         <!-- Latest compiled JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        
+
+        <link rel="stylesheet" href="/css/styles.css">
     </head>
     <body>
         <script type="text/javascript" src="cordova.js"></script>
 
-        <div class="header-bar">
-          <h3>Moral March</h3>
+        <script>
+          function checkIn() {
+            alert("You have succesfully checked in, thank you!");
+          }
+
+          function donate() {
+            alert("This is how you donate with text-to-give, you are the best! Thanks so much!")
+          }
+        </script>
+
+        <!-- Title -->
+        <div class="container-fluid header-bar">
+            <h3>Moral March</h3>
         </div>
 
-        <!-- Check in button -->
-        <div class="">
-          <h4>Check In</h4>
+        <main>
+
+          <div class="container-fluid">
+
+            <!-- check in button  -->
+            <div class="row">
+              <div class="col-xs-12">
+                  <button type="button" name="check-in-btn" class="btn btn-block check-in" onclick="checkIn()">
+                    <h3>Check In</h3>
+                  </button>
+              </div>
+            </div>
+
+            <!-- Information Documents -->
+            <div class="row">
+              <div class="col-xs-6">
+                <a href="sample1.txt">
+                  <button type="button" name="doc1-btn" class="btn btn-block doc-btn">
+                    <h5>Doc 1</h5>
+                  </button>
+                </a>
+              </div>
+              <div class="col-xs-6">
+                <a href="sample2.txt">
+                  <button type="button" name="doc2-btn" class="btn btn-block doc-btn">
+                    <h5>Doc 2</h5>
+                  </button>
+                </a>
+              </div>
+            </div>
+
+            <!-- Donate Button -->
+            <div class="row">
+              <div class="col-xs-12">
+                <button type="button" name="donate-btn" class="btn btn-block donate-btn" onclick="donate()">
+                  <h3>Donate Here</h3>
+                </button>
+              </div>
+            </div>
+
+            <!-- Map -->
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="map">
+                  <h6>Insert Map here</h6>
+                </div>
+              </div>
+            </div>
+
         </div>
 
-        <!-- Document 1 -->
-        <div class="">
-          <h5>Document 1</h5>
-        </div>
+      </main>
 
-        <!-- Document 2 -->
-        <div class="">
-          <h5>Document 2</h5>
+      <footer class="navbar-default navbar-fixed-bottom">
+        <div class="container-fluid">
+          <!-- Logo -->
+          <p>Copyright - All rights Reserved</p>
         </div>
+      </footer>
 
-        <!-- Donate Button -->
-        <div class="">
-          <h4>Donate Here</h4>
-        </div>
-
-        <!-- Map -->
-        <div class="">
-          <!-- insert map here -->
-        </div>
 
     </body>
 
-    <footer>
-      <!-- Logo -->
-      <p>Copyright - All rights Reserved</p>
-    </footer>
+
 </html>
