@@ -1,0 +1,36 @@
+.header-bar {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.check-in {
+  background-color: darkred;
+  color: black;
+  margin: 3rem 0rem;
+}
+
+.doc-btn {
+  background-color: lightgrey;
+  padding: 3rem 0rem;
+}
+
+.donate-btn {
+  background-color: darkgreen;
+  text-align: center;
+  color: black;
+  margin: 3rem 0rem;
+}
+
+.map {
+  background-color: lightblue;
+  text-align: center;
+  height: 25vh;
+}
+
+
+
+footer {
+  text-align: center;
+  color: black;
+}
