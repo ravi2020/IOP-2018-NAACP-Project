@@ -4,22 +4,51 @@
         <meta charset="utf-8">
         <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
         <title>Sign In Page</title>
+
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        
     </head>
     <body>
         <script type="text/javascript" src="cordova.js"></script>
 
-        <!-- Title -->
-        <div class="container-fluid header-bar">
-            <h3>Sign In</h3>
-        </div>
+        <form action="#.php">
+            <div class="container">
+                <h1>Sign In</h1>
+                <hr>
 
-        <main>
+                <br>
 
-      	 	<div class="container-fluid">
+                <label><b>Email</b></label>
+                <input type="text" placeholder="Enter E-mail" name="email" required>
 
-      	 	</div>
+                <br>
 
-        </main>
+                <label><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <br>
+
+                <label>
+                    <input type="checkbox" checked="checked" style="margin-bottom:15px">Remember me
+                </label>
+              </div>
+          </form>
+
+            <br>
+
+            <a href="create.html">
+            <button type="button" name="createAccountBtn">Create Account</button>
+            </a>
+
 
     </body>
 </html>
