@@ -1,112 +1,197 @@
 <!doctype html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-<title>Survey</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <title>Survey</title>
 
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/bootstrap-social.css">
 </head>
 
 <body>
-<header id="header">NAACP Moral March</header>
-<div id="main">
-  <h3>Please fill out this survey.</h3>
-  <form>
-    <p> Name <br>
-      <input type="text" placeholder="Name">
-    </p>
-    <p> City <br>
-      <input type="text" placeholder="City">
-    </p>
-    <p> State <br>
-      <input type="text" placeholder="State">
-    </p>
-    <p> Zip Code <br>
-      <input type="text" placeholder="Zipcode">
-    </p>
-    <p> Age <br>
-      <input type="text" placeholder="Age">
-    </p>
+  <div class="container-fluid sign-in-header" style="margin-bottom: 0">
+    <h1>Survey</h1>
+  </div>
 
-    <p> Which of these issues concern you? <br>
-      <label class="checkbx">
-        <input type="checkbox" name="issues" value="vote">
-        Protecting the Vote<br>
-		<span class="checkmark"></span>
-      </label>
-      <label class="checkbx">
-        <input type="checkbox" name="issues" value="criminal justice">
-        Criminal Justice<br>
-		  <span class="checkmark"></span>
-      </label>
-      <label class="checkbx">
-        <input type="checkbox" name="issues" value="immigration">
-        Immigration Issues<br>
-		  <span class="checkmark"></span>
-      </label>
-      <label class="checkbx">
-        <input type="checkbox" name="issues" value="women's rights">
-        Women's Rights<br>
-		  <span class="checkmark"></span>
-      </label>
-      <label class="checkbx">
-        <input type="checkbox" name="issues" value="education">
-        Education<br>
-		  <span class="checkmark"></span>
-      </label>
-      <label class="checkbx">
-        <input type="checkbox" name="issues" value="economic sustainability">
-        Economic Sustainability<br>
-		  <span class="checkmark"></span>
-      </label>
-      <label class="checkbx">
-        <input type="checkbox" name="issues" value="healthcare">
-        Healthcare<br>
-		  <span class="checkmark"></span>
-      </label>
-    </p>
-    <p>Are you a member of NAACP?<br>
-      <label class="radiobutton">
-        <input type="radio" name="member" value="yes">
-        <span class="radiochecked"></span>Yes</label>
-      <label class = "radiobutton">
-        <input type="radio" name="member" value="no">
-		<span class="radiochecked"></span>No</label>
+  <div class="container-fluid">
+    <h3>Please fill out this survey.</h3>
 
-    </p>
-    <p>If not, would you like to join?<br>
-      <label class="radiobutton">
-        <input type="radio" name="join" value="yes">
-        <span class="radiochecked"></span>Yes</label>
-      <label class = "radiobutton">
-        <input type="radio" name="join" value="no">
-		<span class="radiochecked"></span>No</label>
-    </p>
-    <p> Are you interested in volunteering with us in 2018? <br>
-      <label class="radiobutton">
-        <input type="radio" name="volunteer" value="yes">
-        <span class="radiochecked"></span>Yes</label>
-      <label class = "radiobutton">
-        <input type="radio" name="volunteer" value="no">
-		<span class="radiochecked"></span>No</label>
+    <form>
+      <div class="row">
+        <div class="col-xs-12">Name <br>
+          <input type="text" placeholder="Name">
+        </div>
+      </div>
+      <br>
 
-    </p>
-    <p id="submit">
-      <input type="submit" value="Submit">
-    </p>
-  </form>
-</div>
-<footer id="footer"> <img src="naacp_logo.png" width="100" height="100" alt="NAACP NC Logo"/>
-   and copyright stuff?
- </footer>
+      <div class="row">
+        <div class="col-xs-12">City <br>
+          <input type="text" placeholder="City">
+        </div>
+      </div>
+      <br>
+
+      <div class="row">
+        <div class="col-xs-12">State <br>
+          <input type="text" placeholder="State">
+        </div>
+      </div>
+      <br>
+
+      <div class="row">
+        <div class="col-xs-12">Zip Code <br>
+          <input type="text" placeholder="Zipcode">
+        </div>
+      </div>
+      <br>
+
+      <div class="row">
+        <div class="col-xs-12">Age <br>
+          <input type="text" placeholder="Age">
+        </div>
+      </div>
+      <br>
+
+      Which of these issues concern you?
+      <div class="row">
+        <div class="col-xs-12">
+          <label class="checkbx">
+            <input type="checkbox" name="issues" value="vote" >
+            Protecting the Vote
+    		    <span class="checkmark"></span>
+          </label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <label class="checkbx">
+            <input type="checkbox" name="issues" value="criminal justice">
+            Criminal Justice
+    		    <span class="checkmark"></span>
+          </label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <label class="checkbx">
+            <input type="checkbox" name="issues" value="immigration">
+            Immigration Issues<br>
+    		    <span class="checkmark"></span>
+          </label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <label class="checkbx">
+            <input type="checkbox" name="issues" value="women's rights">
+          Women's Rights<br>
+  		      <span class="checkmark"></span>
+          </label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <label class="checkbx">
+            <input type="checkbox" name="issues" value="education">
+            Education<br>
+		          <span class="checkmark"></span>
+          </label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <label class="checkbx">
+            <input type="checkbox" name="issues" value="economic sustainability">
+            Economic Sustainability<br>
+		        <span class="checkmark"></span>
+          </label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <label class="checkbx">
+            <input type="checkbox" name="issues" value="healthcare">
+            Healthcare
+		          <span class="checkmark"></span>
+          </label>
+        </div>
+      </div>
+      <br>
+
+      Are you a member of NAACP?<br>
+      <div class="row">
+        <div class="col-xs-12">
+            <label class="radiobutton">
+              <input type="radio" name="member" value="yes">
+              <span class="radiochecked"></span>
+              Yes
+            </label>
+            <label class="radiobutton">
+              <input type="radio" name="member" value="no">
+		          <span class="radiochecked"></span>
+              No
+            </label>
+        </div>
+      </div>
+      <br>
+
+      <div class="row">
+        <div class="col-xs-12">
+            If not, would you like to join?<br>
+            <label class="radiobutton">
+                <input type="radio" name="join" value="yes">
+                <span class="radiochecked"></span>
+                Yes
+            </label>
+
+            <label class="radiobutton">
+              <input type="radio" name="join" value="no">
+		          <span class="radiochecked"></span>No
+            </label>
+          </div>
+        </div>
+        <br>
+
+        Are you interested in volunteering with us in 2018? <br>
+        <div class="row">
+          <div class="col-xs-12">
+            <label class="radiobutton">
+              <input type="radio" name="volunteer" value="yes">
+              <span class="radiochecked"></span>Yes
+            </label>
+            <label class="radiobutton">
+              <input type="radio" name="volunteer" value="no">
+		            <span class="radiochecked"></span>No
+            </label>
+          </div>
+        </div>
+        <br>
+
+        <div class="row">
+          <div class="col-xs-12">
+            <button type="button" onclick="location.href = 'main.html';" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+
+    </form>
+    </div>
+    <footer id="footer"></footer>
 </body>
+
 </html>
