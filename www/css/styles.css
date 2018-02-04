@@ -8,7 +8,7 @@ body {
 .header-bar {
   background-color: #474e5d;
   color: white;
-  text-align: center;
+  text-align: left;
 }
 
 .check-in {
@@ -18,7 +18,8 @@ body {
 }
 
 .doc-btn {
-  background-color: lightgrey;
+  background-color: #474e5d;
+  color: whitesmoke;
   padding: 3rem 0rem;
 }
 
