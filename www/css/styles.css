@@ -8,7 +8,7 @@ body {
 .header-bar {
   background-color: #474e5d;
   color: white;
-  text-align: center;
+  text-align: lefts;
 }
 
 .check-in {
@@ -18,7 +18,8 @@ body {
 }
 
 .doc-btn {
-  background-color: lightgrey;
+  background-color: #474e5d;
+  color: whitesmoke;
   padding: 3rem 0rem;
 }
 
@@ -27,6 +28,14 @@ body {
   text-align: center;
   color: black;
   margin: 3rem 0rem;
+}
+
+.logoutBtn {
+  margin-top: 1rem;
+  margin-left: 3rem;
+  background-color:  #E9B800;
+  color: black;
+  border: none;
 }
 
 .map {
