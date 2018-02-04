@@ -8,7 +8,15 @@ body {
 .header-bar {
   background-color: #474e5d;
   color: white;
+<<<<<<< HEAD
   text-align: left;
+=======
+<<<<<<< HEAD
+  text-align: lefts;
+=======
+  text-align: left;
+>>>>>>> fac91b060d08ec9c5b337d6178a0deb4f5ac9247
+>>>>>>> ce20503e5699c2f59de1ff0a2f7a872287f412d1
 }
 
 .check-in {
