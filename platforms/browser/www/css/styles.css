@@ -59,6 +59,10 @@ body {
   padding-bottom: 1rem;
 }
 
+#signInLogo {
+  padding-top: 1.5rem;
+}
+
 .google-button {
   height: 40px;
   border-width: 0;
