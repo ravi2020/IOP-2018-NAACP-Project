@@ -4,6 +4,10 @@ body {
   background-color: whitesmoke;
 }
 
+html {
+  background-color: whitesmoke;
+}
+
 
 .header-bar {
   background-color: #474e5d;
@@ -24,7 +28,7 @@ body {
 }
 
 .donate-btn {
-  background-color: darkgreen;
+  background-color: #E9B800;
   text-align: center;
   color: black;
   margin: 3rem 0rem;
