@@ -26,37 +26,42 @@
   <div class="container-fluid">
     <h3>Please fill out this survey.</h3>
 
-    <form>
+    <form name="info" netlify>
       <div class="row">
-        <div class="col-xs-12">Name <br>
+        <div class="col-xs-12">
+          <label>Name</label>
           <input type="text" placeholder="Name">
         </div>
       </div>
       <br>
 
       <div class="row">
-        <div class="col-xs-12">City <br>
+        <div class="col-xs-12">
+            <label>City</label>
           <input type="text" placeholder="City">
         </div>
       </div>
       <br>
 
       <div class="row">
-        <div class="col-xs-12">State <br>
+        <div class="col-xs-12">
+          <label for="">State</label>
           <input type="text" placeholder="State">
         </div>
       </div>
       <br>
 
       <div class="row">
-        <div class="col-xs-12">Zip Code <br>
+        <div class="col-xs-12">
+            <label>Zip Code</label>
           <input type="text" placeholder="Zipcode">
         </div>
       </div>
       <br>
 
       <div class="row">
-        <div class="col-xs-12">Age <br>
+        <div class="col-xs-12">
+          <label>Age</label>
           <input type="text" placeholder="Age">
         </div>
       </div>
@@ -65,71 +70,50 @@
       Which of these issues concern you?
       <div class="row">
         <div class="col-xs-12">
-          <label class="checkbx">
+          <label class="checkbx"> Protecting the Vote </label>
             <input type="checkbox" name="issues" value="vote" >
-            Protecting the Vote
-    		    <span class="checkmark"></span>
-          </label>
         </div>
       </div>
 
       <div class="row">
         <div class="col-xs-12">
-          <label class="checkbx">
+          <label class="checkbx"> Criminal Justice </label>
             <input type="checkbox" name="issues" value="criminal justice">
-            Criminal Justice
-    		    <span class="checkmark"></span>
-          </label>
         </div>
       </div>
 
       <div class="row">
         <div class="col-xs-12">
-          <label class="checkbx">
+          <label class="checkbx"> Immigration Issues </label>
             <input type="checkbox" name="issues" value="immigration">
-            Immigration Issues<br>
-    		    <span class="checkmark"></span>
-          </label>
         </div>
       </div>
 
       <div class="row">
         <div class="col-xs-12">
-          <label class="checkbx">
+          <label class="checkbx"> Women's Rights   </label>
             <input type="checkbox" name="issues" value="women's rights">
-          Women's Rights<br>
-  		      <span class="checkmark"></span>
-          </label>
         </div>
       </div>
 
       <div class="row">
         <div class="col-xs-12">
-          <label class="checkbx">
+          <label class="checkbx"> Education </label>
             <input type="checkbox" name="issues" value="education">
-            Education<br>
-		          <span class="checkmark"></span>
-          </label>
         </div>
       </div>
 
       <div class="row">
         <div class="col-xs-12">
-          <label class="checkbx">
-            <input type="checkbox" name="issues" value="economic sustainability">
-            Economic Sustainability<br>
-		        <span class="checkmark"></span>
-          </label>
+          <label class="checkbx">   Economic Sustainability </label>
+            <input type="checkbox" name="issues" value="economic sustainability" />
         </div>
       </div>
 
       <div class="row">
         <div class="col-xs-12">
-          <label class="checkbx">
+          <label class="checkbx"> Healthcare </label>
             <input type="checkbox" name="issues" value="healthcare">
-            Healthcare
-		          <span class="checkmark"></span>
-          </label>
         </div>
       </div>
       <br>
@@ -154,16 +138,12 @@
       <div class="row">
         <div class="col-xs-12">
             If not, would you like to join?<br>
-            <label class="radiobutton">
+            <label class="radiobutton">   Yes </label>
                 <input type="radio" name="join" value="yes">
-                <span class="radiochecked"></span>
-                Yes
-            </label>
 
-            <label class="radiobutton">
+
+            <label class="radiobutton"> No </label>
               <input type="radio" name="join" value="no">
-		          <span class="radiochecked"></span>No
-            </label>
           </div>
         </div>
         <br>
@@ -171,21 +151,18 @@
         Are you interested in volunteering with us in 2018? <br>
         <div class="row">
           <div class="col-xs-12">
-            <label class="radiobutton">
+            <label class="radiobutton"> Yes </label>
               <input type="radio" name="volunteer" value="yes">
-              <span class="radiochecked"></span>Yes
-            </label>
-            <label class="radiobutton">
+
+            <label class="radiobutton"> No </label>
               <input type="radio" name="volunteer" value="no">
-		            <span class="radiochecked"></span>No
-            </label>
           </div>
         </div>
         <br>
 
         <div class="row">
           <div class="col-xs-12">
-            <button type="button" onclick="location.href = 'main.html';" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary">Submit</button>
           </div>
         </div>
 
