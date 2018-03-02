@@ -15,21 +15,21 @@
   <!-- Latest compiled JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/bootstrap-social.css">
 </head>
 
 <body>
+  <!--Heading -->
   <div class="container-fluid sign-in-header" style="margin-bottom: 0">
     <h1>Survey</h1>
   </div>
 
   <div class="container-fluid">
     <h3>Please fill out this survey.</h3>
-
+   <!--Start form -->
     <form name="info" netlify>
       <div class="row">
         <div class="col-xs-12">
-          <label>Name</label>
+          <label>Name</label> <!--Name Field-->
           <input type="text" name="Name">
         </div>
       </div>
@@ -37,7 +37,7 @@
 
       <div class="row">
         <div class="col-xs-12">
-            <label>City</label>
+            <label>City</label> <!--City Field-->
           <input type="text" name="City">
         </div>
       </div>
@@ -45,7 +45,7 @@
 
       <div class="row">
         <div class="col-xs-12">
-          <label for="">State</label>
+          <label for="">State</label> <!--State Field-->
           <input type="text" name="State">
         </div>
       </div>
@@ -53,7 +53,7 @@
 
       <div class="row">
         <div class="col-xs-12">
-            <label>Zip Code</label>
+            <label>Zip Code</label> <!--Zip Code Field-->
           <input type="text" name="zipcode">
         </div>
       </div>
@@ -61,67 +61,67 @@
 
       <div class="row">
         <div class="col-xs-12">
-          <label>Age</label>
+          <label>Age</label> <!--Age Field-->
           <input type="text" name="Age">
         </div>
       </div>
       <br>
 
-      Which of these issues concern you?
+      Which of these issues concern you? <!--Start Checkbox for Issues-->
       <div class="row">
         <div class="col-xs-12">
-          <label class="checkbx"> Protecting the Vote </label>
+          <label class="checkbx"> Protecting the Vote </label> <!--Choice 1-->
             <input type="checkbox" name="issues" value="vote" >
         </div>
       </div>
 
       <div class="row">
         <div class="col-xs-12">
-          <label class="checkbx"> Criminal Justice </label>
+          <label class="checkbx"> Criminal Justice </label> <!--Choice 2-->
             <input type="checkbox" name="issues" value="criminal justice">
         </div>
       </div>
 
       <div class="row">
         <div class="col-xs-12">
-          <label class="checkbx"> Immigration Issues </label>
+          <label class="checkbx"> Immigration Issues </label> <!--Choice 3-->
             <input type="checkbox" name="issues" value="immigration">
         </div>
       </div>
 
       <div class="row">
         <div class="col-xs-12">
-          <label class="checkbx"> Women's Rights   </label>
+          <label class="checkbx"> Women's Rights </label> <!--Choice 4-->
             <input type="checkbox" name="issues" value="women's rights">
         </div>
       </div>
 
       <div class="row">
         <div class="col-xs-12">
-          <label class="checkbx"> Education </label>
+          <label class="checkbx"> Education </label> <!--Choice 5-->
             <input type="checkbox" name="issues" value="education">
         </div>
       </div>
 
       <div class="row">
         <div class="col-xs-12">
-          <label class="checkbx">   Economic Sustainability </label>
+          <label class="checkbx">   Economic Sustainability </label> <!--Choice 6-->
             <input type="checkbox" name="issues" value="economic sustainability" />
         </div>
       </div>
 
       <div class="row">
         <div class="col-xs-12">
-          <label class="checkbx"> Healthcare </label>
+          <label class="checkbx"> Healthcare </label> <!--Choice 7-->
             <input type="checkbox" name="issues" value="healthcare">
         </div>
       </div>
       <br>
-
+	<!--End First Checkbox-->
       Are you a member of NAACP?<br>
       <div class="row">
         <div class="col-xs-12">
-            <label class="radiobutton">
+            <label class="radiobutton"> <!--Radio Button: member of NAACP?-->
               <input type="radio" name="member" value="yes">
               <span class="radiochecked"></span>
               Yes
@@ -137,18 +137,16 @@
 
       <div class="row">
         <div class="col-xs-12">
-            If not, would you like to join?<br>
-            <label class="radiobutton">   Yes </label>
+            If not, would you like to join?<br> <!--Radio Button: join NAACP?-->
+            <label class="radiobutton"> Yes </label>
                 <input type="radio" name="join" value="yes">
-
-
             <label class="radiobutton"> No </label>
               <input type="radio" name="join" value="no">
           </div>
         </div>
         <br>
 
-        Are you interested in volunteering with us in 2018? <br>
+        Are you interested in volunteering with us in 2018? <br>  <!--Radio Button: Volunteer?-->
         <div class="row">
           <div class="col-xs-12">
             <label class="radiobutton"> Yes </label>
@@ -162,13 +160,13 @@
 
         <div class="row">
           <div class="col-xs-12">
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary">Submit</button>  <!--Submit the form-->
           </div>
         </div>
 
-    </form>
+    </form>  <!--End the Form-->
     </div>
-    <footer id="footer"></footer>
+    <footer id="footer"> <!--empty footer for stuff if needed--></footer>
 </body>
 
 </html>
