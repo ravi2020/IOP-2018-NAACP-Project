@@ -1,0 +1,58 @@
+/*HEADER STUFF*/
+html, body{
+	margin: 0;
+	max-width: 100%;
+    overflow-x: hidden;
+}
+header {
+	background: black;
+	color: white;
+	height: 3em;
+	padding: 5px 0px 0px 20px;
+	border-bottom: 5px solid #FFCB00;
+	font-size: 2em;
+	max-height: 65px;
+	-webkit-box-shadow: 0px 5px 10px #BFBFBF;
+	box-shadow: 0px 5px 10px #BFBFBF;
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+}
+
+#logo {
+	width: 1.5em;
+	float: left;
+}
+
+main {
+	min-height: 1000px;
+}
+
+/*FOOTER STUFF*/
+footer {
+	background: black;
+	-webkit-box-shadow: 0px -5px 10px #BFBFBF;
+	box-shadow: 0px -5px 10px #BFBFBF;
+	color: white;
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	font-size: 30px;
+	max-height: 90px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+footer i {
+	margin: 0 .3em 0 .3em
+}
+
+footer a {
+	color: white;
+}
+
+@media (max-width: 320px) {
+	footer{
+		font-size: 25px
+	}
+}
+
