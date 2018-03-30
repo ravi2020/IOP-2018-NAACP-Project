@@ -1,100 +1,84 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-   <head>
-       <meta charset="utf-8">
-       <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-       <title>Create An Account Page</title>
+<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+		<link href="css/newcss.css" rel="stylesheet" type="text/css">
+		<!--hardcoded stylesheet-->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+		<!--link to icons-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<!--Bootstrap link -->
 
-
-       <!-- Latest compiled and minified CSS -->
-       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-       <!-- jQuery library -->
-       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-       <!-- Latest compiled JavaScript -->
-       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-       <link rel="stylesheet" href="/css/styles.css">
-
-       <!-- Font Awesome  -->
-       <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-
-   </head>
-   <body>
-       <script type="text/javascript" src="cordova.js"></script>
-
-       <script>
-         function redirect() {
-           if (true) {
-             location.href="survey.html";
-           }
-         }
-       </script>
-
-       <div class="container-fluid sign-in-header">
-         <div class="row">
-           <div class="col-xs-6">
-               <h1>  Create An Account  </h1>
-           </div>
-           <div class="col-xs-6" id="signInLogo">
-             <img src="NAACP-PV-Logo.png" alt="NAACP Logo" style="width:80%">
-           </div>
-         </div>
-       </div>
-
-       <main>
-       <div class="container-fluid">
-         <form class="signInForm"action="#.php">
-
-                 <br>
-                 <div class="form-group">
-                   <label>Last Name</label>
-                   <br>
-                   <input type="text" placeholder="Last Name" name="name" required>
-                 </div>
-
-                 <div class="form-group">
-                   <label>First Name</label>
-                   <br>
-                   <input type="text" placeholder="First Name" name="name" required>
-                 </div>
-
-                 <div class="form-group">
-                   <label>Email</label>
-                   <br>
-                   <input type="text" placeholder="Enter E-mail" name="email" required>
-                 </div>
-
-                 <div class="form-group">
-                   <label>Password</label>
-                   <br>
-                   <input type="password" placeholder="Enter Password" name="psw" required>
-                 </div>
-
-                 <div class="form-group">
-                   <label>Confirm Password</label>
-                   <br>
-                   <input type="password" placeholder="Re-Enter Password" name="psw" required>
-                 </div>
-
-                 <br>
-
-               <button type="submit" class="btn btn-primary createAccountBtn" id="signInButton" onclick="redirect()">
-                     Create An Account
-               </button>
-
-               <a href="SignIn.html">
-                   <button type="button" class="btn btn-primary">
-                       Cancel
-                   </button>
-               </a>
-                 <br>
-                 <br>
-       </form>
-
-             <br>
-       </div>
-       </main>
-   </body>
+		<title>Create Account</title>
+	</head>
+	<body>
+		<header>
+		  <div class="row">
+			<div class="col-2"> <img id="logo" alt="logo" src="naacplogo.png"></div>
+			<div class="col-10">NC NAACP</div>
+		  </div>
+		</header>
+		<script type="text/javascript" src="cordova.js"></script>
+		<script>
+				 function redirect() {
+				   if (true) {
+					 location.href="survey.html";
+				   }
+				 }
+		</script>
+		
+		<main>
+			<h3>Create a New Account</h3>
+		  <form>
+			  <div class="row">
+				  <div class="col-xs-12">
+					<label>
+					<h6>First Name</h6>
+					<input type="text" name="first name">
+					</label>
+				  </div>
+				</div>
+		<div class="row">
+		  <div class="col-xs-12">
+			<label>
+			<h6>Last Name</h6>
+			<input type="text" name="last name">
+			</label>
+		  </div>
+		</div>
+		<div class="row">
+		  <div class="col-xs-12">
+			<label>
+			<h6>Email</h6>
+			<input type="text" name="email">
+			</label>
+		  </div>
+		</div>
+		<div class="row">
+		  <div class="col-xs-12">
+			<label>
+			<h6>Password</h6>
+			<input type="password" placeholder="Enter Password" name="psw" required>
+			</label>
+		  </div>
+		</div>
+		<div class="row">
+		  <div class="col-xs-12">
+			<label>
+			<h6>Confirm Password</h6>
+			<input type="password" placeholder="Re-Enter Password" name="psw" required>
+			</label>
+		  </div>
+		</div>
+		<button type="submit" class="btn btn-warning" onclick="redirect()"> Create An Account </button>
+		<br>
+		<br>
+		<a href="SignIn.html">
+		<button type="button" class="btn btn-warning"> Cancel </button>
+		</a> <br>
+		<br>
+		  </form>
+		</main>
+	</body>
 </html>
