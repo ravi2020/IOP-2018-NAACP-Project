@@ -2,10 +2,12 @@
 
 (function() {
 const config = {
-  apiKey: "AIzaSyD_SVh98chWkgJ_sQaG381v7bPXGQ1RKXE",
-  authDomain: "naacp-ab7d2.firebaseapp.com",
-  databaseURL: "https://<DATABASE_NAME>.firebaseio.com",
-  storageBucket: "<BUCKET>.appspot.com",
+  apiKey: "AIzaSyBH6zRL7f5CjpUhcHNz14v6hjx7UQKMaYs",
+    authDomain: "naacp-1d0e7.firebaseapp.com",
+    databaseURL: "https://naacp-1d0e7.firebaseio.com",
+    projectId: "naacp-1d0e7",
+    storageBucket: "naacp-1d0e7.appspot.com",
+    messagingSenderId: "405172211339"
 };
 
 firebase.initializeApp(config);
@@ -17,8 +19,8 @@ const createAccountBtn = document.getElementById('createAccountBtn');
 
 signInButton.addEventListner('click', e => {
 
-	const email = emailText.value; 
-	const password = emailText.value; 
+	const email = emailText.value;
+	const password = emailText.value;
 	const auth = firebase.auth();
 
 	const promise = auth.signInWithEmailAndPassword(email, password);
@@ -27,17 +29,17 @@ signInButton.addEventListner('click', e => {
 
 createAccountBtn.addEventListner('click', e => {
 
-	const email = emailText.value; 
-	const password = emailText.value; 
+	const email = emailText.value;
+	const password = emailText.value;
 	const auth = firebase.auth();
 
 	const promise = auth.createUserWithEmailAndPassword(email, password);
 	promise.catch(e => console.log(e.message));
 })
 
-	// Add signout 
+	// Add signout
 
-	
+
 	firebase.auth().onAuthStateChanged(firebaseUser => {
 		if(firebaseUser) {
 			console.log(firebaseUser);
@@ -45,7 +47,7 @@ createAccountBtn.addEventListner('click', e => {
 			console.log('Not Logged In');
 		}
 	})
-	
+
 }());
 
 
@@ -57,7 +59,7 @@ createAccountBtn.addEventListner('click', e => {
 // firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
 //   var errorCode = error.code;
 //   var errorMessage = error.message;
-// }); 	
+// });
 
 // firebase.auth().signOut().then(function() {
 // }).catch(function(error) {
