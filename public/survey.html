@@ -1,0 +1,210 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+<link href="css/newcss.css" rel="stylesheet" type="text/css">
+<!--hardcoded stylesheet-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+<!--link to icons-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<!--Bootstrap link -->
+
+<title>Survey</title>
+</head>
+
+<body>
+<header>
+  <div class="row">
+    <div class="col-2"> <img id="logo" alt="logo" src="naacplogo.png"></div>
+    <div class="col-10">NC NAACP</div>
+  </div>
+</header>
+
+<main>
+  <h3>Survey</h3>
+  <h5>Please fill out this survey so we can get to know you better.</h5>
+  <!--Start form -->
+  <form id="form1">
+    <div class="row">
+      <div class="col-xs-12">
+        <label>
+        <h6>Name</h6>
+        <input type="text" name="Name">
+        </label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <label>
+        <h6>City</h6>
+        <input type="text" name="City">
+        </label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <label for="">
+        <h6>State</h6>
+        <input type="text" name="State">
+        </label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <label>
+        <h6>Zip Code</h6>
+        <input type="text" name="zipcode">
+        </label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <label>
+        <h6>Age</h6>
+        <input type="text" name="Age">
+        </label>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-xs-12">
+        <h6>Which of these issues concern you?</h6>
+        <label>
+          <input type="checkbox" name="issues" value="vote" >
+          Protecting the Vote </label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <label>
+          <input type="checkbox" name="issues" value="criminal justice">
+          Criminal Justice </label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <label>
+          <input type="checkbox" name="issues" value="immigration">
+          Immigration Issues </label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <label>
+          <input type="checkbox" name="issues" value="women's rights">
+          Women's Rights </label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <label>
+          <input type="checkbox" name="issues" value="education">
+          Education </label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 ">
+        <label>
+          <input type="checkbox" name="issues" value="economic sustainability" />
+          Economic Sustainability </label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <label>
+          <input type="checkbox" name="issues" value="healthcare">
+          Healthcare </label>
+      </div>
+    </div>
+    <br>
+    <!--End First Checkbox-->
+
+    <div class="row">
+      <div class="col-xs-12">
+        <h6> Are you a member of NAACP?</h6>
+        <label>
+          <input type="radio" name="member" value="yes">
+          Yes </label>
+        <label>
+          <input type="radio" name="member" value="no">
+          No </label>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-xs-12">
+        <h6>If not, would you like to join?</h6>
+        <!--Radio Button: join NAACP?-->
+        <label>
+          <input type="radio" name="join" value="yes">
+          Yes </label>
+        <label>
+          <input type="radio" name="join" value="no">
+          No </label>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-xs-12">
+        <h6>Are you interested in volunteering with us in 2018?</h6>
+        <!--Radio Button: Volunteer?-->
+        <label>
+          <input type="radio" name="volunteer" value="yes">
+          Yes </label>
+        <label>
+          <input type="radio" name="volunteer" value="no">
+          No </label>
+      </div>
+    </div>
+    <br>
+    <button type="button" class="btn btn-warning" onclick="clickFunction()">Submit</button>
+  </form>
+  <!--End the Form-->
+  <script>
+     function clickFunction() {
+       var config = {
+         apiKey: "AIzaSyBH6zRL7f5CjpUhcHNz14v6hjx7UQKMaYs",
+         authDomain: "naacp-1d0e7.firebaseapp.com",
+         databaseURL: "https://naacp-1d0e7.firebaseio.com",
+         projectId: "naacp-1d0e7",
+         storageBucket: "naacp-1d0e7.appspot.com",
+         messagingSenderId: "405172211339"
+      };
+         var app = firebase.initializeApp(config);
+         var database = app.database();
+         var auth = app.auth();
+         var storage = app.storage();
+         var databaseRef = database.ref().child(‘survey’);
+
+         var data = document.getElementById("form1");
+
+         var entry = {
+           //this needs to be filled in with daya from the Survey
+           name: data.elements[0].value;
+           city: data.elements[1].value;
+           state: data.elements[2].value;
+           zipcode: data.elements[3].value;
+           age: data.elements[4].value;
+           votingRights: data.elements[5].value;
+           criminalJustice: data.elements[6].value;
+           immigration: data.elements[7].value;
+           womenRights: data.elements[8].value;
+           education: data.elements[9].value;
+           economicSustainability: data.elements[10].value;
+           healthcare: data.elements[11].value;
+
+           //these three change the i value because of how the form is written
+           member: data.elements[12].value;
+           join: data.elements[14].value;
+           volunteer: data.elements[16].value;
+         }
+         databaseref.push().set(entry);
+
+         location.href='landing.html';
+     }
+  </script>
+
+</main>
+</body>
+</html>
