@@ -158,11 +158,13 @@
       </div>
     </div>
     <br>
-    <button type="button" class="btn btn-warning" onclick="clickFunction()">Submit</button>
   </form>
   <!--End the Form-->
+  <button type="button" class="btn btn-warning" onclick="clickFunction()">Submit</button>
+
   <script>
      function clickFunction() {
+         alert("hello, this is an alert");
        var config = {
          apiKey: "AIzaSyBH6zRL7f5CjpUhcHNz14v6hjx7UQKMaYs",
          authDomain: "naacp-1d0e7.firebaseapp.com",
@@ -198,7 +200,7 @@
            member: data.elements[12].value;
            join: data.elements[14].value;
            volunteer: data.elements[16].value;
-         }
+         };
          databaseref.push().set(entry);
 
          location.href='landing.html';
